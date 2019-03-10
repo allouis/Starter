@@ -359,7 +359,7 @@ h6 {
 }
 
 h1 {
-    margin: 0 0 0.5em 0;
+    margin: 0.5em 0;
     font-size: 5.7rem;
     font-weight: 800;
 }
@@ -370,7 +370,7 @@ h1 {
 }
 
 h2 {
-    margin: 1.5em 0 0.5em 0;
+    margin: 0.5em 0;
     font-size: 4rem;
 }
 @media (max-width: 500px) {
@@ -380,7 +380,7 @@ h2 {
 }
 
 h3 {
-    margin: 1.5em 0 1em 0;
+    margin: 1em 0;
     font-size: 3.2rem;
 }
 @media (max-width: 500px) {
@@ -390,17 +390,84 @@ h3 {
 }
 
 h4 {
-    margin: 1.5em 0 1em 0;
+    margin: 1em 0;
     font-size: 2.6rem;
 }
 
 h5 {
-    margin: 1.5em 0 1em 0;
+    margin: 1em 0;
     font-size: 2.4rem;
 }
 
 h6 {
-    margin: 1.5em 0 1em 0;
+    margin: 1em 0;
     font-size: 2.2rem;
 }
 
+/*
+ * my styles
+ */
+
+body {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    line-height: 2;
+    color: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    line-height: 2;
+    color: #333;
+}
+
+body > header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+code,
+pre {
+    background: #eee;
+}
+
+code {
+    padding: 0.5rem 1rem;
+    vertical-align: text-bottom;
+}
+
+pre {
+    padding: 1rem;
+}
+
+a,
+a > h1::before,
+a > h2::before,
+a > h3::before {
+    color: hotpink;
+}
+
+a > h1::before,
+a > h2::before,
+a > h3::before {
+    content: "> "
+}
+
+a:hover > h1::before,
+a:hover > h2::before,
+a:hover > h3::before {
+}
+
+a:hover {
+    text-decoration: none;
+}
