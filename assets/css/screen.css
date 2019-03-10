@@ -1,24 +1,83 @@
-/*
-
-This is a development CSS file which is built to a minified
-production stylesheet in assets/built/screen.css using gulp dev
-
-*/
-
-
-/* Lib - Local component imports
-/* ---------------------------------------------------------- */
 @import "vars.css";
-@import "components/global.css";
-@import "components/ghost.css";
-@import "components/lists.css";
-@import "components/grid.css";
-@import "components/tables.css";
-@import "components/forms.css";
-@import "components/buttons.css";
 
+/* globals */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-/* Main - Theme styles
-/* ---------------------------------------------------------- */
+body {
+    font-family: var(--font-mono);
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 2;
+    color: #555;
+}
 
-/* Your styles here */
+body > header,
+body > footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+body > main {
+
+}
+
+article > header,
+article > h1,
+article > h2,
+article > h3,
+article > h4,
+article > h5,
+article > h6 {
+    padding: 1rem;
+}
+
+/* text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+/* link headings */
+
+a > h1::before,
+a > h2::before {
+    color: hotpink;
+    content: "> "
+}
+
+code,
+pre,
+blockquote {
+    background: #eee;
+}
+
+/* inline code only */
+p > code {
+    padding: 0 0.5rem;
+}
+
+pre,
+blockquote {
+    padding: 1rem;
+    margin: 1rem;
+    overflow-x: auto;
+    border-left: 0.5rem solid hotpink;
+}
+
+ul {
+    padding-left: 2rem;
+}
