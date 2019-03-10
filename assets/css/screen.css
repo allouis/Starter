@@ -1,13 +1,10 @@
-@import "vars.css";
-
-/* globals */
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    font-family: var(--font-mono);
+    font-family: Menlo, Courier, monospace;
     max-width: 60rem;
     margin: 0 auto;
     padding: 2rem;
@@ -25,17 +22,6 @@ body > main {
 
 }
 
-article > header,
-article > h1,
-article > h2,
-article > h3,
-article > h4,
-article > h5,
-article > h6 {
-    padding: 1rem;
-}
-
-/* text */
 h1,
 h2,
 h3,
@@ -46,12 +32,21 @@ strong {
     color: #444;
 }
 
+article > header,
+article > h1,
+article > h2,
+article > h3,
+article > h4,
+article > h5,
+article > h6 {
+    padding: 1rem;
+}
+
+
 a {
     text-decoration: none;
     color: hotpink;
 }
-
-/* link headings */
 
 a > h1::before,
 a > h2::before {
@@ -65,7 +60,6 @@ blockquote {
     background: #eee;
 }
 
-/* inline code only */
 p > code {
     padding: 0 0.5rem;
 }
@@ -78,6 +72,8 @@ blockquote {
     border-left: 0.5rem solid hotpink;
 }
 
-ul {
+ul,
+ol {
     padding-left: 2rem;
+    margin: 1rem;
 }
